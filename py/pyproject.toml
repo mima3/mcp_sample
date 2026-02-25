@@ -1,0 +1,21 @@
+[project]
+name = "py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=0.83.0",
+    "claude-agent-sdk>=0.1.39",
+    "fastmcp>=3.0.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.26.0",
+    "openai>=2.21.0",
+    "openai-agents>=0.9.2",
+]
+
+[dependency-groups]
+dev = [
+    "pyrefly>=0.53.0",
+    "ruff>=0.15.2",
+]
