@@ -119,7 +119,7 @@ verifier = KeycloakJWTVerifier(KEYCLOAK_ISSUER, required_scopes=REQUIRED_SCOPES)
 
 mcp = FastMCP(
     "CalculatorAuthMCPServer",
-    host="127.0.0.1",
+    host="localhost",
     port=8000,
     token_verifier=verifier,
     auth=AuthSettings(
