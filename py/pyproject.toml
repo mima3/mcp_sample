@@ -19,3 +19,9 @@ dev = [
     "pyrefly>=0.53.0",
     "ruff>=0.15.2",
 ]
+
+[tool.ruff.lint]
+select = ["C90"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10

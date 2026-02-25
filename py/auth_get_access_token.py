@@ -2,7 +2,6 @@ import asyncio
 import os
 import httpx
 from dotenv import load_dotenv
-from mcp.client.streamable_http import streamable_http_client
 
 
 load_dotenv()  # load environment variables from .env

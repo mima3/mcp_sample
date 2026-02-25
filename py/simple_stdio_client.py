@@ -9,7 +9,7 @@ async def main() -> None:
     path = Path("./simple_stdio_server.py").resolve()
     server_params = StdioServerParameters(
         command="uv",
-        args=["--directory", str(path.parent), "run", path.name],
+        args=["--directory", str(path.parent), "run", "python", path.name],
         env=None,
     )
     async with stdio_client(server_params) as (read, write):
